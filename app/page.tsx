@@ -42,10 +42,10 @@ export default function Home() {
           md:bottom-10 md:right-10
         "
       >
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-light opacity-90">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-light opacity-90 font-sans">
           estratégia dentro do objetivo
         </h2>
-        <strong className="block text-2xl sm:text-3xl md:text-4xl font-bold">
+        <strong className="block text-2xl sm:text-3xl md:text-4xl font-bold font-display">
           criatividade fora da caixinha
         </strong>
       </div>
