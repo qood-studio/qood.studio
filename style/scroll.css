@@ -1,0 +1,16 @@
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 0.5rem));
+  }
+}
+
+.scroll {
+  animation: scroll 5s linear infinite;
+}
+
+.scroll.stop {
+  animation-play-state: paused;
+}
