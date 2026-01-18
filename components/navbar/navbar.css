@@ -68,7 +68,7 @@
 
 @keyframes warningStripeAnimation {
   to {
-    mask-position: 110%;
+    mask-position: 115%;
   }
 }
 

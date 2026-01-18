@@ -2,11 +2,12 @@ import QoodLogo from "../../QoodLogo";
 import * as motion from "motion/react-client"
 import "./hero.css";
 import Typewriter from "@/components/Typewriter";
+import DustParticles from "@/components/DustParticles";
 
 export default function Hero() {
   return (
     <section className="bg-hero relative h-screen overflow-hidden">
-      
+      <DustParticles />
       {/* <div
         className="absolute inset-0 grid pointer-events-none"
         style={{
@@ -79,7 +80,7 @@ export default function Hero() {
               speed="slow"
               delay={0.5}
               texts={["experiences in motion", "made for humans", "made by qood" ]}
-              className="text-3xl font-bold text-[--QOOD_WHITE] font-sans"
+              className="text-3xl font-bold text-ink font-sans"
             />
           </div>
           <div className=""></div>
@@ -108,7 +109,7 @@ export default function Hero() {
                 }}
               className="rotate-45 "
             >
-              <span className="font-bold uppercase text-8xl font-mono">Motion</span>
+              <span className="text-ink font-bold uppercase text-8xl font-mono">Motion</span>
             </motion.div>
           </div>
           <div></div>

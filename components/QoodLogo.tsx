@@ -1,5 +1,6 @@
 "use client";
 
+import "../style/qood-logo.css";
 import { useEffect, useRef } from "react";
 
 /* ---------- tuning ---------- */
