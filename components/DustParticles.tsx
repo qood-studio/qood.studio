@@ -19,11 +19,12 @@ export default function DustParticles() {
   if (!ready) return null;
 
   return (
-    <div className="absolute inset-0 z-0 pointer-events-none">
+    <div className="absolute inset-0 z-0 top-0 left-0 pointer-events-none">
       <Particles
         id="dust"
         options={dustParticlesConfig}
-        style={{ width: "100%", height: "100%" }}
+        style={{"position": "relative"}}
+        className="relative h-full w-screen"
       />
     </div>
   );

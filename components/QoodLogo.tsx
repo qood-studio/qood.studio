@@ -144,14 +144,18 @@ export default function QoodLogo() {
 
             {/* O */}
             <path
-              ref={(el) => el && (oLetterRefs.current[0] = el)}
+              ref={(el) => {
+                if (el) oLetterRefs.current[0] = el;
+              }}
               d="M175.25 106C143.938 106 120 83.1875 120 53.1875C120 22.9375 144 0 175.312 0C206.625 0 230.625 22.9375 230.625 53.1875C230.625 83.1875 206.625 106 175.25 106Z"
               style={{ transformBox: "fill-box", transformOrigin: "center" }}
             />
 
             {/* O */}
             <path
-              ref={(el) => el && (oLetterRefs.current[1] = el)}
+              ref={(el) => {
+                if (el) oLetterRefs.current[1] = el;
+              }}
               d="M294.875 106.438C263.562 106.438 239.625 83.625 239.625 53.625C239.625 23.375 263.625 0.4375 294.938 0.4375C326.25 0.4375 350.25 23.375 350.25 53.625C350.25 83.625 326.25 106.438 294.875 106.438Z"
               style={{ transformBox: "fill-box", transformOrigin: "center" }}
             />
@@ -162,13 +166,17 @@ export default function QoodLogo() {
 
           {/* animated holes */}
           <path
-            ref={(el) => el && (holeRefs.current[0] = el)}
+            ref={(el) => {
+              if (el) holeRefs.current[0] = el;
+            }}
             fill="black"
             d="M174.312 80.4375C190.312 80.4375 202.562 68.5 202.562 53C202.562 37.4375 190.312 25.4375 174.312 25.4375C158.312 25.4375 146.062 37.4375 146.062 53C146.062 68.5 158.312 80.4375 174.312 80.4375Z"
           />
 
           <path
-            ref={(el) => el && (holeRefs.current[1] = el)}
+            ref={(el) => {
+              if (el) holeRefs.current[1] = el;
+            }}
             fill="black"
             d="M293.938 80.875C309.938 80.875 322.188 68.9375 322.188 53.4375C322.188 37.875 309.938 25.875 293.938 25.875C277.938 25.875 265.688 37.875 265.688 53.4375C265.688 68.9375 277.938 80.875 293.938 80.875Z"
           />

@@ -1,6 +1,9 @@
 import type { ISourceOptions } from "@tsparticles/engine";
 
 export const dustParticlesConfig: ISourceOptions = {
+  fullScreen: {
+    enable: false
+  },
   particles: {
     number: {
       value: 110,

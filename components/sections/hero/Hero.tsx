@@ -6,7 +6,7 @@ import DustParticles from "@/components/DustParticles";
 
 export default function Hero() {
   return (
-    <section className="bg-hero relative h-screen overflow-hidden">
+    <section className="bg-transparent relative h-screen overflow-hidden">
       <DustParticles />
       {/* <div
         className="absolute inset-0 grid pointer-events-none"
@@ -98,7 +98,7 @@ export default function Hero() {
           <QoodLogo />
         </div>
         <div className="row-span-1 grid grid-cols-[2fr_2fr_5fr]">
-          <div>
+          {/* <div>
             <motion.div
                 initial={{ opacity: 0, x: -400, y: 200 }}
                 animate={{ opacity: 1, x: 0, y: 0 }}
@@ -111,7 +111,7 @@ export default function Hero() {
             >
               <span className="text-ink font-bold uppercase text-8xl font-mono">Motion</span>
             </motion.div>
-          </div>
+          </div> */}
           <div></div>
           <div></div>
         </div>

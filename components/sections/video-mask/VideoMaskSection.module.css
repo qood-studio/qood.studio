@@ -1,0 +1,33 @@
+.main{
+  margin-bottom: 100vh;
+}
+
+.container {
+  height: 200vh;
+  position: relative;
+}
+
+.stickyMask {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+
+  mask-image: url('/video-mask/mask.svg');
+  mask-position: 52.35% center;
+  mask-repeat: no-repeat;
+  mask-size: 80%;
+
+  -webkit-mask-image: url('/video-mask/mask.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: 52.35% center;
+  -webkit-mask-size: 80%;
+}
+
+
+.stickyMask video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
