@@ -3,6 +3,8 @@
 import { useEffect, useState } from 'react';
 import { AnimatePresence } from 'motion/react';
 import Preloader from '../../components/Preloader/index';
+import { usePathname } from 'next/navigation';
+import { titlesByPathname } from './pathTitles';
 
 export default function LoaderRoot({
   children,
@@ -11,6 +13,12 @@ export default function LoaderRoot({
 }) {
 
   const [isLoading, setIsLoading] = useState(true);
+  const pathname = usePathname();
+  let title = titlesByPathname[pathname.replace('/', '')];
+
+  useEffect(() => {
+    setIsLoading(true);
+  }, [pathname]);
 
   useEffect( () => {
     (
@@ -22,7 +30,7 @@ export default function LoaderRoot({
             setIsLoading(false);
             document.body.style.cursor = 'default'
             window.scrollTo(0,0);
-          }, 2000)
+          }, title ? 1000 : 2000)
       }
     )()
   }, [])
@@ -30,7 +38,7 @@ export default function LoaderRoot({
   return (
     <>
       <AnimatePresence mode='wait'>
-        {isLoading && <Preloader />}
+        {isLoading && <Preloader title={title} />}
       </AnimatePresence>
       {children}
     </>
