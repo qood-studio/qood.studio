@@ -24,7 +24,7 @@ export default function PageTransition() {
     return () => {
       tl.kill();
     };
-  }, [pathname]); // 🔑 THIS is the trigger
+  }, [pathname]);
 
   return (
     <div

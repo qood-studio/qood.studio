@@ -1,9 +1,9 @@
-.main{
+.main {
   margin-bottom: 100vh;
 }
 
 .container {
-  height: 200vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -14,20 +14,44 @@
   height: 100vh;
   width: 100%;
 
+  transform-origin: 50% 50%;
+
   mask-image: url('/video-mask/mask.svg');
-  mask-position: 52.35% center;
+  mask-position: 50% 50%;
   mask-repeat: no-repeat;
   mask-size: 80%;
 
   -webkit-mask-image: url('/video-mask/mask.svg');
   -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: 52.35% center;
+  -webkit-mask-position: 50% 50%;
   -webkit-mask-size: 80%;
 }
 
-
-.stickyMask video{
+.stickyMask video {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.textToDisplay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+
+  text-align: center;
+  color: #000;
+  font: var(--font-space);
+  font-size: 8rem;
+
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
+
+  * {
+    color: #000;
+    font: var(--font-space);
+    font-size: 8rem;
+  }
 }

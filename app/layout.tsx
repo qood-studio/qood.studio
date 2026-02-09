@@ -6,7 +6,6 @@ import Navbar from "@/components/navbar/Navbar";
 import Cursor from "@/components/cursor/Cursor";
 import ReactLenis from "lenis/react";
 import LoaderRoot from "@/components/overlays/LoaderRoot";
-import PageTransition from "@/components/overlays/PageTransition";
 
 export const inter = Inter({
   subsets: ["latin"],
@@ -46,7 +45,7 @@ export default function RootLayout({
         className={`${inter.variable} ${space.variable} ${shareTechMono.variable} bg-hero antialiased w-full`}
       >
         <LoaderRoot>
-          <PageTransition />
+          {/* <PageTransition /> */}
           <Cursor size={40} hoverSize={60} />
           <div className="flex flex-row w-full">
             <Navbar />
