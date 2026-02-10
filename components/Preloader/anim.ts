@@ -1,3 +1,5 @@
+import type { Variant, Variants } from "motion"
+
 export const opacity = {
     initial: {
         opacity: 0
@@ -8,7 +10,7 @@ export const opacity = {
     },
 }
 
-export const slideUp = {
+export const slideUp: Variants = {
     initial: {
         top: 0
     },
