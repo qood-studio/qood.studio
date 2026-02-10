@@ -12,7 +12,7 @@ export const opacity: Variants = {
 
 export const slideUp: Variants = {
     initial: {
-        top: 0
+        top: '0'
     },
     exit: {
         top: "-100vh",
