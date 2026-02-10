@@ -1,6 +1,6 @@
 import type { Variant, Variants } from "motion"
 
-export const opacity = {
+export const opacity: Variants = {
     initial: {
         opacity: 0
     },
